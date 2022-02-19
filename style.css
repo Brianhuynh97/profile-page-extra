@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  color: #333;
+  text-align: center;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, #1ad6fd, #1d62fc);
+  font-size: 100;
+  color: #fff;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  margin-top: 100px;
+  cursor: pointer;
+  border-radius: 50%;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 4px rgba(238, 255, 6, 0.6);
+    opacity: 1;
+  }
+
+  25% {
+    box-shadow: 0 0 0 1px rgba(238, 255, 6, 0.6);
+    opacity: 1;
+  }
+
+  50% {
+    box-shadow: 0 0 0 7px rgba(238, 255, 6, 0.6);
+    opacity: 1;
+    transform: translateY(-15px);
+  }
+
+  75% {
+    box-shadow: 0 0 0 4px rgba(238, 255, 6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    box-shadow: 0 0 0 5px rgba(238, 255, 6, 0.6);
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.button {
+  margin: 10px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+
+.button:hover {
+  transform: rotate(180deg);
+}
+
+.username {
+  font-size: 60px;
+}
+
+.description {
+  margin-top: 20px;
+  font-weight: 300;
+  text-shadow: 0 0 5px #fff;
+}
+
+.social {
+  color: rgb(208, 228, 35)
+}
